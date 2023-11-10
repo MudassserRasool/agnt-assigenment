@@ -1,12 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -18,10 +14,56 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #12131c;
+}
+
+@layer utilities {
+  
+  .btn-login {
+    @apply bg-purple-60 py-3 px-11 rounded-full  text-base font-normal;
+  }
+
+
+  .bell-button {
+    @apply mb-8 flex flex-row justify-center gap-3 items-center w-52 h-9 rounded-3xl border border-black-70;
+  }
+
+  .coming-soon {
+    @apply text-center  text-lg font-normal  bg-opacity-10;
+  }
+
+  .section-heading {
+    @apply mb-8 text-6xl font-semibold;
+  }
+  .hero-description {
+    @apply mb-8 text-base font-normal;
+  }
+
+  .section-purple-heading {
+    @apply text-purple-60 text-center  text-2xl font-normal;
+  }
+  .card-body {
+    @apply flex flex-col p-4 gap-2 rounded-lg bg-black-70;
+  }
+  .card-heading {
+    @apply w-80  text-xl md:text-2xl font-semibold;
+  }
+  .card-description {
+    @apply text-black-60 text-base font-normal;
+  }
+
+  .btn-integration {
+    @apply bg-purple-60 py-4 px-14 rounded-full  text-base font-normal w-72 mx-auto mt-16;
+  }
+  .builder-button {
+    @apply bg-black-70 py-4 px-14 rounded-full text-base font-normal w-72 mt-16 text-center  hover:text-purple-60;
+  }
+  .footer{
+    @apply bg-black-70 py-6 mt-20 flex text-center justify-center
+  }
+  .discord-button {
+    @apply px-10 w-96 h-20 bg-black-70 rounded-3xl flex justify-center gap-6 items-center
+  }
+
+  
 }
