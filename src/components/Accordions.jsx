@@ -1,9 +1,9 @@
 'use client';
 
 // Initialization for ES Users
-import { Collapse, initTE } from 'tw-elements';
+// import { Collapse, initTE } from 'tw-elements';
 
-initTE({ Collapse });
+// initTE({ Collapse });
 const Accordions = () => {
   return (
     <div className="mx-auto container">
