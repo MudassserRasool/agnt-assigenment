@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="mx-auto container px-4 md:px-8 mt-12">
+    <div className="mx-auto container px-4 md:px-8 mt-24 md:mt-14">
       <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row items-center">
         {/* content - start */}
         <div className="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
@@ -25,7 +25,7 @@ const Hero = () => {
                 placeholder="Email"
                 className="w-96 pl-8 h-20 bg-gray-900 rounded-3xl bg-black-70"
               />
-              <button className="absolute right-3 top-2 px-4 py-2  bg-purple-60 hover:bg-purple-70   w-36 h-16  rounded-2xl">
+              <button className="absolute  right-2.5 top-2 px-4 py-2  bg-purple-60 hover:bg-purple-70   w-36 h-16  rounded-2xl">
                 Join Beta
               </button>
             </div>

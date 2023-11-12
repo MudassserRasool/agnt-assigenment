@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
+/** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,9 +8,11 @@ module.exports = {
 
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/tw-elements/dist/js/**/*.js',
+    // './node_modules/tw-elements/dist/js/**/*.js',
 
-    '/node_modules/preline/dist/*.js',
+    // '/node_modules/preline/dist/*.js',
+
+    './node_modules/flowbite-react/**/*.js',
   ],
   plugins: [
     require('preline/plugin'),
