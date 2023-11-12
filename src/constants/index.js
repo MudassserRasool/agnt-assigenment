@@ -7,43 +7,31 @@ export const FeatureCards = [
   },
   {
     icon: '/FeatureDealIcon.svg',
-    heading: 'User information',
+    heading: 'Deal tracking',
     description:
       'Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis.',
   },
   {
     icon: '/FeaturePipeLineIcon.svg',
-    heading: 'User information',
+    heading: 'Pipeline management',
     description:
       'Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis.',
   },
   {
     icon: '/FeatureDocumentationIcon.png',
-    heading: 'User information',
+    heading: 'Reporting dashboard',
     description:
       'Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis.',
   },
   {
-    icon: '/FeaturesUserIcon.svg',
-    heading: 'User information',
+    icon: '/FeatureMeetingIcon.png',
+    heading: 'Meeting scheduling',
     description:
       'Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis.',
   },
   {
-    icon: '/FeaturesUserIcon.svg',
-    heading: 'User information',
-    description:
-      'Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis.',
-  },
-  {
-    icon: '/FeaturesUserIcon.svg',
-    heading: 'User information',
-    description:
-      'Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis.',
-  },
-  {
-    icon: '/FeaturesUserIcon.svg',
-    heading: 'User information',
+    icon: '/FeatureEmailTracking.png',
+    heading: 'Email tracking',
     description:
       'Borem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis.',
   },

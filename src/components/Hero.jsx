@@ -11,7 +11,7 @@ const Hero = () => {
             <p className="coming-soon">Cooming Soon!</p>
           </div>
 
-          <h1 className="section-heading">
+          <h1 className="section-heading text-center md:text-start">
             Your AI Sidekick is Just Around the Corner!
           </h1>
           <p className="hero-description">
@@ -19,13 +19,13 @@ const Hero = () => {
             way you work and interact. Sign up now to be the first to experience
             it.
           </p>
-          <form className="flex w-full gap-4 md:max-w-md">
+          <form className="flex flex-col md:flex-row w-full gap-4 md:max-w-md">
             <div className="relative">
               <input
                 placeholder="Email"
                 className="w-96 pl-8 h-20 bg-gray-900 rounded-3xl bg-black-70"
               />
-              <button className="absolute right-3 top-2 px-4 py-2  bg-purple-60   w-36 h-16  rounded-2xl">
+              <button className="absolute right-3 top-2 px-4 py-2  bg-purple-60 hover:bg-purple-70   w-36 h-16  rounded-2xl">
                 Join Beta
               </button>
             </div>

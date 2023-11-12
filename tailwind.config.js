@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,8 +9,12 @@ module.exports = {
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/tw-elements/dist/js/**/*.js',
-  ],
 
+    '/node_modules/preline/dist/*.js',
+  ],
+  plugins: [
+    require('preline/plugin'),
+],
   theme: {
     extend: {
       backgroundImage: {
@@ -26,6 +31,7 @@ module.exports = {
       },
       purple: {
         60: '#9764bf',
+        70: '#8f56f0',
       },
     },
 
@@ -42,5 +48,4 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tw-elements/dist/plugin.cjs')],
 };

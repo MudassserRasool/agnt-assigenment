@@ -13,17 +13,22 @@ const Features = () => {
           </h1>
         </div>
         {/* text - end */}
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 space-x-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 space-x-2">
           {FeatureCards.map((card, index) => (
-            <div key={index} className="card-body items-center">
+            <div key={index} className="card-body items-center p-4">
               <Image
                 src={card.icon}
                 width={53}
                 height={45}
                 alt={card.heading}
+                className="mx-auto mb-2"
               />
-              <div className="card-heading text-center">{card.heading}</div>
-              <div className="card-description text-center">{card.description}</div>
+              <div className="card-heading text-center text-lg font-semibold mb-1">
+                {card.heading}
+              </div>
+              <div className="card-description text-center text-sm">
+                {card.description}
+              </div>
             </div>
           ))}
         </div>

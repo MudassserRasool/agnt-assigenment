@@ -5,7 +5,7 @@ const lato = Lato({ subsets: ['latin'], weight: ['400', '700'] });
 
 const Navbar = () => {
     const links = [
-      { title: 'Home', href: '/home' },
+      { title: 'Home', href: '/' },
       { title: 'Pricing', href: '/pricing' },
       { title: 'Community', href: '/community' },
       { title: 'About Us', href: '/aboutus' },
@@ -61,9 +61,9 @@ const Navbar = () => {
                       href={link.href}
                       className={`block py-2 pl-3 pr-4 text-gray-900 rounded group ${
                         index === 0
-                          ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500'
-                          : `group-hover:bg-gray-500 hover:text-purple-60  hover:underline-purple-60 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${
-                              isLinkSelected(link.href) ? 'text-purple-700 underline' : ''
+                          ? 'text-white md:bg-transparent  text-xl font-normal md:p-0 md:dark:text-blue-500'
+                          : `text-xl font-normal group-hover:bg-gray-500 hover:text-purple-60  hover:underline-purple-60 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 hover:underline dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${
+                              isLinkSelected(link.href) ? 'text-xl font-normal text-purple-60 underline' : ''
                             }`
                       }`}
                       aria-current={isLinkSelected(link.href) ? 'page' : undefined}
